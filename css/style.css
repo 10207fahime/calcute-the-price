@@ -1,0 +1,57 @@
+@font-face {
+  font-family: BYekan;
+  src: url("../font/BYekan+.ttf");
+  src: url("../font/BYekan+\ Bold.ttf");
+}
+.bg-gray {
+  background-color: rgb(26 26 28);
+}
+.card-design {
+  height: 400px;
+  width: 500px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.border-b {
+  padding: 40px;
+  border-bottom: 1px solid gray;
+}
+input[type="text"] {
+  background-color: rgb(78, 75, 75);
+  color: white;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border: rgb(18, 18, 19);
+}
+input[type="text"]:focus {
+  background-color: rgb(78, 75, 75);
+  color: white;
+}
+input[type="range"] {
+  -webkit-appearance: none;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  width: 300px;
+  height: 5px;
+  background: rgb(78, 75, 75);
+  border: none;
+  border-radius: 3px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: none;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  background: rgb(79, 32, 218);
+  margin-top: -4px;
+}
+
+input[type="range"]:focus {
+  outline: none;
+}
+
+input[type="range"]:focus::-webkit-slider-runnable-track {
+  background: rgb(78, 75, 75);
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="bg-dark" dir="rtl">
+    <div class="container">
+      <div class="row">
+        <div class="col-6">
+          <div class="d-flex m-5 justify-content-center flex-column">
+            <h1 class="text-white mb-5">محاسبه قیمت</h1>
+            <label
+              for="exampleFormControlInput1"
+              class="form-label text-primary"
+              >مبلغ خود را وارد کنید*</label
+            >
+            <input
+              type="text"
+              class="form-control mb-5"
+              id="price"
+              lang="fa-IR"
+            />
+            <label for="customRange1" class="form-labe text-primary"
+              >میزان تخفیف</label
+            >
+
+            <span><p class="text-white" id="dis-value"></p></span>
+            <input
+              type="range"
+              class="form-range mb-5"
+              id="discount"
+              min="0"
+              max="100"
+            />
+            <label for="customRange1" class="form-labe text-primary"
+              >مالیات بر ارزش افزوده</label
+            >
+            <span><p class="text-white" id="tip-value"></p></span>
+            <input
+              type="range"
+              class="form-range text-primary"
+              id="tip"
+              min="0"
+              max="100"
+            />
+          </div>
+        </div>
+        <div class="col-6">
+          <div
+            class="d-flex justify-content-center flex-column"
+            style="margin-top: 150px"
+          >
+            <div class="card m-auto bg-gray card-design">
+              <div class="card-body text-center m-5">
+                <h4 class="card-title text-light">مبلغ نهایی</h4>
+                <h1 class="text-light border-b" id="amount"></h1>
+                <button class="btn btn-primary" id="submit">محاسبه</button>
+                <div class="row">
+                  <div class="d-flex justify-content-between">
+                    <div>
+                      <p class="text-info">تخفیف</p>
+                      <span><h3 class="text-white" id="dis"></h3></span>
+                    </div>
+                    <div>
+                      <p class="text-info">مالیات</p>
+                      <span><h3 class="text-white" id="tips"></h3></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <!-- <script src="js/bootstrap.bundle.js"></script> -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
